@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        form {
+            border: 1px solid lightblue;
+        }
+    </style>
+</head>
+<body>
+    <form action="pagina2.php" method="post">
+        <label for="inputNome">Nome</label>
+        <input id="inputNome" type="text" name="nome">
+
+        <br><br>
+
+        <label for="inputData">Data</label>
+        <input id="inputData" type="date">
+        
+        <br><br>
+        
+        <label for="selectArea">Área</label>
+        <select id="selectArea" name="area">
+            <option value="1">Informática</option>
+            <option value="2">Eletro-eletrônica</option>
+            <option value="3">Meio ambiente</option>
+        </select>
+
+        <br><br>
+
+        <input type="radio" id="radioIntegrado" name="modalidade" value="1">
+        <label for="radioIntegrado">Integrado</label>
+        <input type="radio" id="radioSubsequente" name="modalidade" value="2">
+        <label for="radioSubsequente">Subsequente</label>
+
+        <br><br>
+
+        <input type="checkbox" id="checkPHP" name="checkPHP" value="1">
+        <label for="checkPHP">PHP</label>
+        <input type="checkbox" id="checkScrum" name="checkScrum" value="2">
+        <label for="checkScrum">Scrum</label>
+        
+        <br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+</body>
+</html>

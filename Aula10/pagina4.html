@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            margin:0;
+        }
+
+        main{
+            background-color: black;
+            height: 100vh;
+            width: 100vw;
+            display:grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+
+            column-gap: 5vh;
+            row-gap: 5vh;
+        }
+
+        #primeira{
+            background-color: lightblue;
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+
+        #segunda{
+            background-color: lightgreen;
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+
+        }
+
+        #terceira{
+            background-color: lightgray;
+            
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section id="primeira" >1</section>
+        <section id="segunda">2</section>
+        <section id="terceira">3</section>
+    </main>
+</body>
+</html>

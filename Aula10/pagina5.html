@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+
+            background-color: yellow;
+            margin:0;
+            height: 100vh;
+            width: 100vw;
+            display:grid;
+
+            grid-template-areas: 'h h h'
+                                 'a m .'
+                                 '. f f';
+
+            grid-template-rows: 15% auto 10%;
+            grid-template-columns: 1fr 8fr 1fr;                  
+        }
+
+        .cabecalho{
+            background-color: lightseagreen;
+            grid-area: h;
+
+        }
+
+        .conteudo{
+            background-color: lightslategray;
+            grid-area: m;
+        }
+
+        .rodape{
+            background-color: lightsteelblue;
+            grid-area: f;
+        }
+
+        .extra{
+            background-color: mediumaquamarine;
+            grid-area: a;
+        }
+    </style>
+</head>
+<body>
+    <header class="cabecalho"></header>
+    <main class="conteudo"></main>
+    <aside class="extra"></aside>
+    <footer class="rodape"></footer>
+</body>

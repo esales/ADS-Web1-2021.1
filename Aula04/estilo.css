@@ -1,0 +1,21 @@
+p {
+    color: green;
+    font-size: 40px;
+
+    text-transform: capitalize;
+    text-indent: 100px;
+}
+
+h1 {
+    font-family: verdana;
+}
+
+h3 {
+    color: mintcream;
+    background-color: navy;
+
+    text-align: end;
+    direction: rtl;
+
+    text-decoration: underline line-through;
+}
