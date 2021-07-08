@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id='divPrincipal'>
+        <input type="text" id="elemento1">
+        <input type="text" id="elemento2">
+    </div>
+
+    <script>
+        function funcao() {
+            let id = document.activeElement.id;
+            console.log(`id: ${id}`);
+        }
+
+        let elementoDiv = document.getElementById('divPrincipal');
+        
+        
+        elementoDiv.addEventListener('click', function () { funcao(); } );
+                                    
+
+    </script>
+
+</body>
+
+</html>

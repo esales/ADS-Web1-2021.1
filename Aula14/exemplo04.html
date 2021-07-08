@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="funcao()">Incluir item</button>
+
+
+    <ul id='lista'>
+
+    </ul>
+
+    
+    <script>
+        function funcao(){
+            let objetoLista = document.getElementById('lista');
+            let objetoItem = document.createElement('li');
+            let texto = document.createTextNode('item!');
+
+            objetoItem.appendChild(texto);
+
+            objetoLista.appendChild(objetoItem);
+        }
+
+    </script>
+</body>
+</html>

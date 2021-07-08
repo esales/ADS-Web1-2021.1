@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" onmouseout="funcao()" onmouseover="funcao2()" id="campo">
+
+    <script>
+        function funcao(){
+            let elemento = document.getElementById('campo');
+            elemento.focus();
+        }
+
+        function funcao2(){
+            let elemento = document.getElementById('campo');
+            elemento.blur();
+        }
+
+    </script>
+    
+</body>
+</html>
